@@ -4,6 +4,6 @@
   <section class="container mt-5">
     <h1>{{ $title }}</h1>
 
-    <a href="/train">To trains</a>
+    <a class="btn btn-primary"href="/train">To trains</a>
   </section>
 @endsection

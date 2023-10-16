@@ -11,6 +11,11 @@
       <p class="card-text"><strong> Stazione di Arrivo </strong>{{ $train->arrival_station }}</p>
       <p class="card-text"><strong> Orario di Partenza </strong>{{ $train->departure_time }}</p>
       <p class="card-text"> <strong>Orario di Arrivo </strong>{{ $train->arrival_time }}</p>
+      @if (@$train->train_on_time)
+      <p class="card-text"><strong>È in orario ? </strong> Si, partirà il giorno : {{ $train->arrival_time }}</p>
+      @else
+      <p class="card-text"> <strong>È in orario ? </strong>No</p>
+      @endif
     </div>
   </div>
   @empty
